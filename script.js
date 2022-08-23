@@ -23,12 +23,12 @@ let prezzoPieno = 0.21 * chilometri;
 if (anni < 18) {
     /*  under 18 */
     let prezzoScontato = (prezzoPieno / 100) * 80;
-    document.getElementById("prezzoVisualizzato").innerHTML = prezzoScontato + "€";
+    document.getElementById("prezzoVisualizzato").innerHTML = prezzoScontato.toFixed(2) + "€";
 } else if (anni > 65) {
     /* over 65 */
     let prezzoScontato = (prezzoPieno / 100) * 60;
-    document.getElementById("prezzoVisualizzato").innerHTML = prezzoScontato + "€";
+    document.getElementById("prezzoVisualizzato").innerHTML = prezzoScontato.toFixed(2) + "€";
 } else {
     /* 18-65 */
-    document.getElementById("prezzoVisualizzato").innerHTML = prezzoPieno + "€";
+    document.getElementById("prezzoVisualizzato").innerHTML = prezzoPieno.toFixed(2) + "€";
 }
